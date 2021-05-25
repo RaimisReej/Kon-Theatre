@@ -1,0 +1,59 @@
+.hero-wrapper {
+    height: 900px;
+    width: 100%;
+    background-image: url(/images/Layer53.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: inset 0 30px 200px -20px rgba(0,0,0,0.8);
+    clip-path: inset(0px 0px 0px round 0rem 0 10rem);
+}
+.content-wrapper {
+    display: inline-block;
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+.text-content {
+    color: white;
+    height: calc(100% - 100px);
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.text-content p {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 24px;
+     margin-bottom: 3rem;
+}
+.text-content h3 {
+    font-size: 24px;
+    font-weight: 300;
+    padding: .5rem 0;
+}
+.text-content h1 {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 60px;
+    padding-bottom: 1rem;
+}
+.mouse {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    bottom: 0;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);  
+    margin-bottom: 25px;  
+}

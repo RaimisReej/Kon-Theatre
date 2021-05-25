@@ -1,0 +1,35 @@
+.btn {
+    padding: 15px 70px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 15px 15px 15px 0;
+    transition: transform .2s ease-in-out;
+}
+.more-w {
+    border: 2px solid white;
+    margin-right: 1rem;
+}
+.book {
+    background: var(--content-color);
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* gendre */
+.gendre {
+    display: inline-block;
+    text-transform: uppercase;
+    min-height: 22.5px;
+    width: 82px;
+    border-radius: 5px;
+    background: #25b8c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 1rem 0;
+}

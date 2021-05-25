@@ -1,0 +1,21 @@
+:root {
+    --content-color: #e50051;
+    --h1: 72px;
+    --h2: 36px;
+    --h3: 24px;
+    --h4: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+} 
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}

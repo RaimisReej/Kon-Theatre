@@ -1,0 +1,28 @@
+.sticky-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 40px;
+    background: #e8c606;
+    border-bottom-left-radius: 5px;
+    display: flex;
+}
+.sticky-nav ul {
+    display: flex;
+    align-items: center;
+}
+.sticky-nav li {
+    padding: 0 1rem;
+}
+.sticky-nav li:not(:last-child) {
+    border-right: 2px solid #000;
+   
+}
+.sticky-nav a {
+    color: #000;
+   font-weight: 600;
+}
+.sticky-nav i {
+    margin-right: .4rem;
+}

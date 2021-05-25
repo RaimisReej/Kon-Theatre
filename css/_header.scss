@@ -1,0 +1,54 @@
+.header-wrapper {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.nav-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem auto; 
+}
+.nav-wrapper a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo-div {
+    flex: 2;
+    transform: translateY(-15px);
+}
+nav {
+    flex: 3;
+}
+.menu {
+    flex: 2;
+    justify-content: flex-end;
+}
+.inner-menu {
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 10;
+}
+.burger {
+    cursor: pointer;
+    margin-left: .4rem;
+}
+.line1,
+.line2,
+.line3 {
+  width: 1.6rem;
+  height: 0.18rem;
+  margin: 0.3rem;
+  background: white;
+  pointer-events: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
