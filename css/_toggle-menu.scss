@@ -2,10 +2,11 @@
     position: absolute;
     width: 550px;
     height: 100%;
-    background: #24356d;
+    background: var(--bottom-color);
     top: 0;
     right: -9999px;
     padding-top: 100px;
+    z-index: 1;
     a {
         color: #fff;
     }
@@ -26,13 +27,11 @@
     font-size: 24px;
 }
 .toggle-menu ul a:hover {
-    color: #eac50b;
+    color: var(--secondary-color);
 }
 .toggle-menu ul li a {
     display: block;
     float: right;
-    
-   
 }
 .toggle-menu ul li a span {
     transition: transform .3s;

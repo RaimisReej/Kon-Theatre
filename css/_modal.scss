@@ -1,0 +1,78 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    width: 90%;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.8);
+    animation-name: modalOpen;
+    animation-duration: 0.7s;
+    position: relative;
+}
+.modal-inner {
+    width: 100%;
+    height: 100%;
+    h2 {
+        font-size: var(--h2);
+        font-weight: 800;
+    }
+    p {
+        font-size: 13px;
+    }
+    a {
+        color: var(--content-color);
+        text-decoration: underline;
+        font-weight: 600;
+    }
+}
+.modalLayout ul li{
+    display: flex;
+}
+.modalLayout ul li:not(:last-child){
+    border-bottom: 1px solid #000;
+}
+
+
+
+
+
+.modal-content span {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    color: white;
+    text-transform: uppercase;
+    min-height: 22.5px;
+    width: 82px;
+    border-radius: 5px;
+    background: var(--content-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+.closeBtn:hover,.closeBtn:focus {
+    color: #000;
+    cursor: pointer;
+}
+@keyframes modalOpen {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

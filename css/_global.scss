@@ -1,5 +1,7 @@
 :root {
     --content-color: #e50051;
+    --secondary-color: #e8c606;
+    --bottom-color: #24356d;
     --h1: 72px;
     --h2: 36px;
     --h3: 24px;
@@ -18,4 +20,13 @@ ul {
 }
 a {
     text-decoration: none;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.flex-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

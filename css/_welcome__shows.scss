@@ -1,9 +1,6 @@
 //welcome
 .lbt-wrapper {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: 3rem 0;
     color: #000;
 }
@@ -36,8 +33,6 @@
     margin-right: 5rem;
 }
 .useful-links {
-    display: flex;
-    flex-direction: column;
     padding-left: 3rem;
     border-left: 2px solid black;
     flex: 1;

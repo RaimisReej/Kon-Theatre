@@ -25,9 +25,9 @@
                 </ul>
             </nav>
             <div class="menu">
-                <div class="inner-menu">
-                    <a href="#" class="slide-menu">Menu</a>
-                     <div class="burger slide-menu">
+                <div class="inner-menu slide-menu">
+                    <a href="#">Menu</a>
+                     <div class="burger">
                           <div class="line1"></div>
                           <div class="line2"></div>
                           <div class="line3"></div>
@@ -35,9 +35,19 @@
                  </div>
                  <div class="toggle-menu">
                     <ul>
-                        <li><a href="#">What's On
-                            <span class="fas fa-caret-down"></span>
-                        </a></li>
+                        <li><a href="#" class="visit-btn">What's On
+                            <span class="fas fa-caret-down first"></span>
+                        </a>
+                        <ul class="visit-show">
+                            <li><a href="#">Secondary nav item</a></li>
+                            <li><a href="#">Secondary nav item</a></li>
+                            <li><a href="#">Secondary nav item</a>
+                                <ul>
+                                    <li><a href="#">Tertiary nav item</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                         <li><a href="#">Get involved
                             <span class="fas fa-caret-down"></span>
                         </a></li>
@@ -45,21 +55,11 @@
                             <span class="fas fa-caret-down"></span>
                         </a></li>
                         <li>
-                            <a href="#" class="visit-btn">Your visit
-                                <span class="fas fa-caret-down first"></span>
-                            </a>
-                            <ul class="visit-show">
-                                <li><a href="#">Secondary nav item</a></li>
-                                <li><a href="#">Secondary nav item</a></li>
-                                <li><a href="#">Secondary nav item</a>
-                                    <ul>
-                                        <li><a href="#">Tertiary nav item</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                            <a href="#">Your visit
+                                <span class="fas fa-caret-down"></span>
+                            </a></li>
                         <li><a href="#">About us
-                            <span class="fas fa-caret-down"></span>
+                                <span class="fas fa-caret-down"></span>
                         </a></li>
                         <li><a href="#">Venue hire
                             <span class="fas fa-caret-down"></span>
@@ -81,7 +81,7 @@
         </header>
 
        <div class="content-wrapper">
-           <div class="text-content">
+           <div class="text-content flex-c">
                <span class="gendre">drama</span>
                <h3>
                    <time datetime="2021-03-03">Wed 3, Mar 21</time>
@@ -95,24 +95,68 @@
                 </p>
                 <div class="buttons">
                     <a href="#" class="more-w btn">more</a>
-                    <a href="#" class="book btn">book</a>
+                    <a href="#" id="modalBtn" class="book btn">book</a>
                 </div>
            </div>
        </div>
-       <div class="mouse">
+       <div class="mouse flex-c">
            <img src="./icons/mouse-scroll.svg" alt="">
        </div>
     </div>
-
+    <!-- modal -->
+    <div class="modal" id="simpleModal">
+        <div class="modal-content">
+         <span id="closeBtn" class="closeBtn">Close &times;</span>
+            <div class="modal-inner">
+             <div class="description-text">
+                <h2>Beach Body Ready</h2>
+                <p>It's the season of cutting carbs, hitting it hard at the gym, and shaving everything from the chin down.</p>
+                <a href="#">Show full details</a>
+             </div>
+             <div class="date-text">
+                 <h2>Dates & Times</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae <a href="#">contact the Box office</a> illo sapiente cum nulla maiores laboriosam!</p>
+             </div>
+             <div class="modalLayout">
+                <ul>
+                 <li>
+                     <div class="modalDate">3 Mar, 2021</div>
+                     <div class="modalTime">7:45 - 9:45</div>
+                     <div class="modalNeeds"><i class="fas fa-sign-language"></i><i class="far fa-registered"></i></div>
+                     <div class="modalBook"><a href="#" class="book btn">book</a></div>
+                 </li>
+                 <li>
+                     <div class="modalDate">4 Mar, 2021</div>
+                     <div class="modalTime">7:45 - 9:45</div>
+                     <div class="modalNeeds"><i class="far fa-registered"></i></div>
+                     <div class="modalBook"><a href="#" class="book btn">book</a></div>
+                 </li>
+                 <li>
+                     <div class="modalDate">5 Mar, 2021</div>
+                     <div class="modalTime">7:45 - 9:45</div>
+                     <div class="modalNeeds"></div>
+                     <div class="modalBook"><a href="#" class="book btn">book</a></div>
+                 </li>
+                </ul>
+                </div>  
+              <div class="modalBottom">
+                  <ul>
+                     <li><i class="fas fa-sign-language"></i>Sign Performance</li>
+                     <li><i class="far fa-registered"></i>Relaxed Performance</li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+    </div>  
     <!-- welcome lbt section -->
-    <div class="lbt-wrapper">
+    <div class="lbt-wrapper flex-c">
         <div class="inner-lbt-wrapper">
         <div class="welcome">
             <h2>Welcome to LBT</h2>
             <h3>LBT is the home of live performance in Huddersfield - and for Kirkless.</h3>
             <p>Lorem ipsum <a href="#">get involved</a> dolor sit amet, <a href="#">venue hire</a> consectetur adipisicing elit. Sequi autem et id delectus molestias <a href="#">support us</a>.</p>
         </div>
-        <div class="useful-links">
+        <div class="useful-links flex">
             <h2>Useful links</h2>
             <ul>
                 <li><a href="#"><i class="far fa-heart"></i>Support LBT</a></li>
@@ -178,7 +222,7 @@
     <!-- support -->
 
     <div class="support-wrapper">
-        <div class="support-inner">
+        <div class="support-inner flex">
             <h1>Support us</h1>
             <p>We're now asking for <a href="#">your help</a> to keep our creative heart beating strong.</p>
             <a href="#" class="btn book">donate now</a>
@@ -189,7 +233,7 @@
     <footer>
     <div class="footer-container">
         <div class="top">
-            <div class="top-left">
+            <div class="top-left flex">
                 <h2>Lawrence Batley Theatre</h2>
                 <p>Queen St, Huddersfield HD1 2SP</p>
                 <p>Box Office: 01484 430528 </p>
@@ -202,7 +246,7 @@
                 </div>
             </div>
             <div class="top-right">
-                <form action="#">
+                <form class="flex-c" action="#">
                     <h2>Newsletter sign up</h2>
                     <p>Sign up to receive our newsletter</p>
                     <input type="text" placeholder="Name" name="name" required>
@@ -212,7 +256,7 @@
             </div>
         </div>
         <div class="bottom">
-            <div class="bottom-container">
+            <div class="bottom-container flex">
                 <img src="./images/Layer59.png" alt="">
                 <p>Company No. 01504033 | Charity No. 510693 | Kirklees Theatre Trusts is a company limited by guarantee.</p>
             </div>

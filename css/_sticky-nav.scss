@@ -4,9 +4,10 @@
     right: 0;
     width: 500px;
     height: 40px;
-    background: #e8c606;
+    background: var(--secondary-color);
     border-bottom-left-radius: 5px;
     display: flex;
+    z-index: 2;
 }
 .sticky-nav ul {
     display: flex;
