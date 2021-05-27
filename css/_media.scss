@@ -56,9 +56,8 @@
     }
     .toggle-menu {
         width: 100vh;
-        
     }
-    
+   
 }
 
 @media (max-width:560px) {
@@ -98,5 +97,13 @@
     }
     .bottom p {
         font-size: 10px;
+    }
+    .modal-inner  h2{
+        font-size: var(--h3);
+    }
+    .modalLayout ul li {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }

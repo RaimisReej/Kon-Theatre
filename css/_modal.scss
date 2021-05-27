@@ -11,7 +11,7 @@
 }
 .modal-content {
     background-color: #fff;
-    margin: 20% auto;
+    margin: 10% auto;
     padding: 20px;
     width: 90%;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.8);
@@ -25,9 +25,11 @@
     h2 {
         font-size: var(--h2);
         font-weight: 800;
+        padding-top: 1rem;
     }
     p {
         font-size: 13px;
+        padding: 1rem 0;
     }
     a {
         color: var(--content-color);
@@ -37,12 +39,50 @@
 }
 .modalLayout ul li{
     display: flex;
+    align-items: center;
+}
+.modalLayout a {
+    color: #fff;
+    text-decoration: none;
+}
+.modalDate {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.modalLayout ul li div {
+    flex: 1;
+    padding: 1.2rem 0;
 }
 .modalLayout ul li:not(:last-child){
     border-bottom: 1px solid #000;
 }
-
-
+.modalLayout i {
+    background-color: var(--secondary-color);
+    padding: .2rem;
+    border-radius: 50%;
+    margin-right: .2rem;
+}
+.modalBottom {
+    background-color: var(--secondary-color);
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 1rem 0;
+}
+.modalBottom ul {
+    display: flex;
+}
+.modalBottom li {
+    padding-right: .5rem;
+}
+.modalBottom i {
+    margin: 0 .4rem;
+}
+.modalBottom li {
+    font-size: 13px;
+}
+.modalBottom li:first-child {
+    border-right: 1px solid #000;
+}
 
 
 
@@ -68,10 +108,11 @@
     float: right;
     font-size: 30px;
 }
-.closeBtn:hover,.closeBtn:focus {
+.closeBtn:hover,.closeBtn:focus, .modalLayout a:hover,.modalLayout a:focus  {
     color: #000;
     cursor: pointer;
 }
+
 @keyframes modalOpen {
     from{opacity: 0;}
     to{opacity: 1;}
